@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uiversity Website Design</title>
+    <link rel="stylesheet" href = "style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link src="http://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/fontawesome.min.css">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+</head>
+<body>
+<section class = "sub-header">
+    <nav> 
+        <a href = "index.html"><img src="images/logo.png"></a>
+        <div class = "nav-links" id = "nav-links">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+             <ul>
+                <li><a href = "index.html">HOME</a></li>
+                <li><a href = "about.html">ABOUT</a></li>
+                <li><a href = "course.html">COURSE</a></li>
+                <li><a href = "blog.html">BLOG</a></li>
+                <li><a href = "contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()" ></i>
+    </nav>
+    <h1>Our Courses</h1>        
+</section>
+
+<!------------Course----------->
+<!------course-------->
+<section class="course">
+    <h1>Courses We Offer</h1>
+    <p>Scope and benefits of the programs.</p>
+    <div class="row">
+        <div class = "course-col">
+            <h3>Intermediate</h3>
+            <p>This course provides a comprehensive foundation for students transitioning from high school to higher education through a diverse curriculum, students will gain essential knowledge and skills.</p>
+        </div>
+        <div class = "course-col">
+            <h3>Degree</h3>
+            <p>Our Bachelor's degree programs offer specialized and in-depth education in a wide range of disciplines, preparing students to excel in their chosen fields. With both theoretical knowledge & practical experience, graduates emerge as well-rounded professionals.</p>
+        </div>
+        <div class = "course-col">
+            <h3>Post Graduation</h3>
+            <p>These Programs offer an immersive and advanced educational experience, catering to students with a thirst for knowledge and a drive to excel in their respective fields. With a strong emphasis on research, critical thinking, and practical application.</p>
+        </div>
+    </div>
+</section>
+<!----------Facilities--------->
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Nourishing Minds, Enriching Lives: Discover Our Campus Facilities!</p>
+    <div class="row">
+        <div class="facilities-col">
+            <img src = "images/library.png">
+            <h3>World Class Library</h3>
+            <p>Our university's world-class libraries house an extensive collection of academic resources, cutting-edge technology, and a serene study environment, empowering students to excel in their academic pursuits and foster a culture of lifelong learning.</p>
+        </div>
+        <div class="facilities-col">
+            <img src = "images/basketball.png">
+            <h3>Largest Play Ground</h3>
+            <p>Our university boasts the largest playground, providing ample space for students to engage in various sports, promoting a healthy & active lifestyle on campus. With state-of-the-art facilities and a vibrant sporting community, students can thrive both academically and physically.</p>
+        </div>
+        <div class="facilities-col">
+            <img src = "images/cafeteria.png">
+            <h3>Tasty and Healthy Food</h3>
+            <p>Indulge in our delicious and healthy food offerings, designed to suit different tastes and dietary needs. Our dining facilities prioritize freshness and quality, providing flavorful meals that boost well-being and academic excellence.</p>
+        </div>
+    </div>
+</section>
+
+<!------------footer----------->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>To create an inclusive environment that promotes skills and intellect to contribute to the amalgamation of nation-building and personal development.<br>The primary purpose is to provide an ambiance conducive to learning and empowering skilled intellectuals to establish themselves and be socially responsible.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+
+    </div>
+</section>
+<!----------Javascript for toggle menu---------->
+<script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu()
+    {
+        navLinks.style.right = "0";
+    }
+    function hideMenu()
+    {
+        navLinks.style.right = "-200px";
+    }
+</script>   
+</body>
+</html>
